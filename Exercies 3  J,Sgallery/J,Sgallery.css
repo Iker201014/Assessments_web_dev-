@@ -3,75 +3,75 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* Body styles */
 body {
-    font-family: Georgia, serif;
-    background-color: #dcdcdc;
+    font-family: Georgia, serif; /* Sets the main font for the page */
+    background-color: #dcdcdc;  /* Light grey background */
 }
-
+/* Header styles */
 header {
-    text-align: center;
-    padding: 30px 0;
+    text-align: center; /* Center text horizontally */  
+    padding: 30px 0; /* Add space above and below the header */
 }
-
+/* Main title in header */
 header h1 {
-    font-size: 60px;
-    margin-bottom: 20px;
+    font-size: 60px; /* Large font size for the title */
+    margin-bottom: 20px; /* Space bellow the title */
 }
-
+/* Navigation links */
 nav a {
-    margin: 0 20px;
-    color: blue;
-    text-decoration: underline;
-    font-size: 20px;
+    margin: 0 20px; /* Space between links */
+    color: blue; /* link color */
+    text-decoration: underline; /* Underline links */
+    font-size: 20px; /* Font size for links */
 }
-
+/* Intro section (text + image side by side) */
 .intro {
-    display: flex;
-    padding: 40px;
-    gap: 40px;
+    display: flex; /* Use Flexbox layout for side-by-side items */
+    padding: 40px; /* Space inside the section */
+    gap: 40px; /* Space between text and image */
 }
-
+/* Text content in intro */
 .text {
-    flex: 1;
-    font-size: 25px;
-    line-height: 1.6;
+    flex: 1; /* Take up equal space as the image */
+    font-size: 25px; /* Larger font size for readability */
+    line-height: 1.6; /* Incresase line height for better readsbility */
 }
-
+/* Container for the side image */
 .side-image {
     flex: 1;
 }
-
+/* Image inside the side-image container */
 .side-image img {
-    width: 100%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    width: 100%; /* Make the image take up the full width of its container */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Add a shoadow for depth */
 }
-
+/* Gallery container */
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0;
+    display: grid; /* Use CSS Grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+    gap: 0; /* No gap between grid items */
 }
- 
+/* Individual gallery box */ 
 .box {
-    height: 500px;
-    background: #fff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    overflow: hidden;
+    height: 500px; /* Fixed height for each gallery item */
+    background: #fff; /* White background */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Soft shadow for depth */
+    overflow: hidden; /* Hide anything that goes outside box */
 }
  
 /* Wide boxes span 2 columns */
 .box.wide {
-    grid-column: span 2;
+    grid-column: span 2; /* Makes the box cover 2 grid columns */
 }
  
 /* Responsive design for smaller screens */
 @media (max-width: 800px) {
     .top-section {
-        flex-direction: column;
+        flex-direction: column; /* Stack flex items vertically */
     }
  
     .gallery {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* Change gallery to 2 columns */
     }
 }

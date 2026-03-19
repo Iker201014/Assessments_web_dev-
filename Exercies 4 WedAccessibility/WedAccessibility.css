@@ -1,19 +1,19 @@
 /* GLOBAL PAGE SETTINGS */
 body {
-    background: white;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
+    background: white; /* Set background color to white */
+    font-family: Arial, Helvetica, sans-serif; /* Set a clean, sans-serif font for the page */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
 /* TOP BAR: LOGO LEFT, MENU CENTER, ICONS RIGHT */
 .top-bar {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    padding: 15px 20px;
-    background: white;
-    border-bottom: 3px solid #000;
+    display: grid; /* Uses grid layout */
+    grid-template-columns: 1fr auto 1fr; /* 3 columns: left and right take up remaining space, center is auto-sized */
+    align-items: center; /* Vertically center items */
+    padding: 15px 20px; /* Add padding around the top bar */
+    background: white; /* Set background color to white */
+    border-bottom: 3px solid #000; /* Add a black border at the bottom for separation */
 }
 
 /* LOGO */
@@ -23,84 +23,83 @@ body {
 
 /* MENU — CENTER */
 .menu {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    margin: 0 auto;
-    padding: 0;
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Use flexbox for horizontal layout */
+    gap: 25px; /* Space between menu items */
+    margin: 0 auto; /* Center the menu horizontally */
+    padding: 0; /* Remove default padding */
 }
 
 .menu li a {
-    text-decoration: none;
-    color: black;
-    font-size: 22px;
-    font-weight: bold;
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Set link color */
+    font-size: 22px; /* Set font size for menu items */
+    font-weight: bold; /* Make menu items bold */
 }
 
 /* ICONS — RIGHT */
 .top-icons {
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-    font-size: 28px;
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: flex-end; /* Align icons to the right */
+    gap: 20px; /* Space between icons */
+    font-size: 28px; /* Set font size for icons */
 }
 
 .top-icons i {
-    cursor: pointer;
-    color: black;
+    cursor: pointer; /* Change cursor to pointer on hover */
+    color: black; /* Set icon color */
 }
 
 /* PHOTO GALLERY */
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-    justify-content: center;
-    padding: 30px;
+    display: flex; /* Flex layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 25px; /* Space between photo cards */
+    justify-content: center; /* Center the gallery */
+    padding: 30px; /* Add padding around the gallery */
 }
 
 /* PHOTO CARD */
 .photo-card {
-    background: rgb(255, 255, 255);
-    width: 300px;
-    border-radius: 12px;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 500px;
+    background: rgb(255, 255, 255); /* White background for each card */
+    width: 300px; /* Fixed width for each card */
+    border-radius: 12px; /* Rounded corners */
+    padding: 15px; /* Space inside the card */
+    text-align: center; /* Center text inside the card */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Add a shadow for depth */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Space out items to fill the card */
+    height: 500px; /* Fixed height for uniformity */
 }
 
-.photo-card img {
-    width: 100%;
-    border-radius: 10px;
+.photo-card img { 
+    width: 100%; /* Make the image take up the full width of the card */
+    border-radius: 10px; /* Rounded corners for the image */
 }
-
+/* IMAGE CAPTION */
 .caption {
-    padding: 12px;
-    font-size: 18px;
-    color: black;
-    flex-grow: 1;
+    padding: 12px; /* Space around the caption text */
+    font-size: 18px; /* Set font size for caption */
+    color: black; /* Set caption text color */
+    flex-grow: 1; /* Allow caption to take up remaining space in the card */
 }
-
+/* BUTTON STYLE */
 .button {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #008cff;
-    color: white;
-    font-size: 18px;
-    border-radius: 8px;
-    text-decoration: none;
-    align-self: center;
+    display: inline-block; /* Make the button an inline block element */
+    padding: 10px 20px; /* Add padding inside the button */
+    background: #008cff; /* Set button background color */
+    color: white; /* Set button text color */
+    font-size: 18px; /* Set font size for button text */
+    border-radius: 8px; /* Rounded corners for the button */
+    text-decoration: none; /* Remove underline from button text */
+    align-self: center; /* Center the button horizontally within the card */
 }
-
+/* FOOTER */
 footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 18px;
+    text-align: center; /* Center text horizontally */
+    padding: 20px; /* Space inside footer */
+    font-size: 18px; /* Text size */
 }
 
 
